@@ -51,6 +51,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:ems="10"
+        android:focusable="true"
         android:hint="                            Enter Password"
         android:inputType="textPassword"
         android:textColorHint="#ffff25e6" />
@@ -90,7 +91,8 @@
         android:layout_marginBottom="40dp"
         android:layout_toStartOf="@+id/textview"
         android:layout_toLeftOf="@+id/textview"
-        android:text="login" />
+        android:text="login"
+        android:background="#9656a1"/>
 
     <Button
         android:id="@+id/button2"
@@ -102,7 +104,8 @@
         android:layout_marginBottom="42dp"
         android:layout_toEndOf="@+id/textview"
         android:layout_toRightOf="@+id/textview"
-        android:text="Cancel" />
+        android:text="Cancel"
+        android:background="#9656a1"/>
 
 
 </RelativeLayout>

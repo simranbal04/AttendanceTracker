@@ -2,6 +2,7 @@ package com.example.attendancetaker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -37,9 +38,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                if (edusername.getText().toString().equals("123") &&  edpassword.getText().toString().equals("123"))
+                if (edusername.getText().toString().equals("admin") &&  edpassword.getText().toString().equals("admin"))
                 {
                     Toast.makeText(getApplicationContext(),"Redirecting",Toast.LENGTH_SHORT).show();
+
+
+//                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+//                    startActivity(intent);
                 }
 
                 else {
