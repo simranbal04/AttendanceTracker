@@ -40,15 +40,31 @@ public class MainActivity extends AppCompatActivity {
             {
                 if (edusername.getText().toString().equals("admin") &&  edpassword.getText().toString().equals("admin"))
                 {
-                    Toast.makeText(getApplicationContext(),"Redirecting",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Professor Simran",Toast.LENGTH_SHORT).show();
 
+                    Intent intent  = new Intent(getApplicationContext(), MainActivity2.class);
+                    // create a bundle object
 
-//                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    Bundle b = new Bundle();
+                    // insert values
+                    b.putString("Name", edusername.getText().toString());
+                    intent.putExtras(b);
+                    startActivity(intent);
+//
+//                    Intent intent = new Intent(getApplicationContext().this) MainActivity2.class);
 //                    startActivity(intent);
                 }
 
-                else {
-                    Toast.makeText(getApplicationContext(),"Wrong Credentials",Toast.LENGTH_SHORT).show();
+                else if (edusername.getText().toString().equals("admin1") && edpassword.getText().toString().equals("admin1")) {
+
+                    Toast.makeText(getApplicationContext(), "Professor Ankita", Toast.LENGTH_SHORT).show();
+
+//                    Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+//                    startActivity(intent);
+                }
+
+                else
+                {
                     tx1.setVisibility(View.VISIBLE);
                     tx1.setBackgroundColor(Color.RED);
                     counter--;

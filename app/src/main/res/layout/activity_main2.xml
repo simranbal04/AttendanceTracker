@@ -1,14 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADBCE"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/date"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:layout_marginBottom="36dp"/>
+        android:layout_marginBottom="36dp"
+        android:gravity="right"
+        android:textSize="20sp" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/nameValue"-->
+    <!--        android:layout_width="171dp"-->
+    <!--        android:layout_height="39dp"-->
+    <!--       -->
+    <!--        android:layout_marginTop="63dp"-->
+    <!--        android:layout_marginRight="-193dp"-->
+    <!--        android:hint="yes"-->
+    <!--        android:textSize="30dp"/>-->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:background="#9656a1"
+        android:text="                  WELCOME "
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:ems="50"
+        android:src="@drawable/human" />
+
+
+    <TextView
+        android:id="@+id/prname"
+        android:layout_width="98dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="155dp"
+        android:text="NAME"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="150dp"
+        android:text="Pr. Kaini"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/prid"
+        android:layout_width="98dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="210dp"
+        android:text="I'D"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/id1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="210dp"
+        android:text="MAD-1098"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="98dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="270dp"
+        android:text="SUBJECTS"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="151dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="270dp"
+        android:spinnerMode="dialog" />
+
+
+    <Button
+        android:id="@+id/stnd_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+
+        android:layout_toStartOf="@+id/textview"
+
+        android:background="#9656a1"
+        android:text="View Student List"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/attendance_button"
+        android:layout_width="412dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginRight="-71dp"
+        android:layout_toStartOf="@+id/textview"
+        android:layout_toLeftOf="@+id/textview"
+        android:background="#9656a1"
+        android:text="TAKE ATTENDANCE"
+        android:textSize="20dp" />
+
 
 </RelativeLayout>
