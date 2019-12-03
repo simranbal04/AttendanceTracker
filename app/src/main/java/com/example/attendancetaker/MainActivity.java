@@ -1,7 +1,5 @@
 package com.example.attendancetaker;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,7 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     Button loginButton,cancelButton;
     EditText edusername,edpassword;
@@ -20,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
     int counter = 3;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
         tx1.setVisibility(View.GONE);
 
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        loginButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v)
             {
@@ -50,17 +51,15 @@ public class MainActivity extends AppCompatActivity {
                     b.putString("Name", edusername.getText().toString());
                     intent.putExtras(b);
                     startActivity(intent);
-//
-//                    Intent intent = new Intent(getApplicationContext().this) MainActivity2.class);
-//                    startActivity(intent);
+
                 }
 
-                else if (edusername.getText().toString().equals("admin1") && edpassword.getText().toString().equals("admin1")) {
-
+                else if (edusername.getText().toString().equals("admin1") && edpassword.getText().toString().equals("admin1"))
+                {
                     Toast.makeText(getApplicationContext(), "Professor Ankita", Toast.LENGTH_SHORT).show();
 
-//                    Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-//                    startActivity(intent);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+                    startActivity(intent);
                 }
 
                 else
@@ -79,9 +78,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }) ;
 
-        cancelButton.setOnClickListener(new View.OnClickListener() {
+        cancelButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 finish();
             }
         });

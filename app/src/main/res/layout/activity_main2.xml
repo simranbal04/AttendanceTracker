@@ -98,19 +98,19 @@
 
 
     <Button
-        android:id="@+id/stnd_button"
+        android:id="@+id/studentlistbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
 
-        android:layout_toStartOf="@+id/textview"
+
 
         android:background="#9656a1"
         android:text="View Student List"
         android:textSize="20dp" />
 
     <Button
-        android:id="@+id/attendance_button"
+        android:id="@+id/attendanceButton"
         android:layout_width="412dp"
         android:layout_height="61dp"
         android:layout_marginTop="520dp"
