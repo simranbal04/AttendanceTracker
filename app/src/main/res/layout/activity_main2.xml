@@ -94,6 +94,7 @@
         android:layout_height="69dp"
         android:layout_marginLeft="220dp"
         android:layout_marginTop="270dp"
+        android:entries="@array/className"
         android:spinnerMode="dialog" />
 
 
@@ -120,6 +121,14 @@
         android:background="#9656a1"
         android:text="TAKE ATTENDANCE"
         android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add Student Name"
+        android:inputType="textPersonName" />
 
 
 </RelativeLayout>

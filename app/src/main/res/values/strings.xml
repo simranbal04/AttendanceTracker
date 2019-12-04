@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Attendance Taker</string>
+    <array name="className">
+        <item>MADT2018</item>
+        <item>MADT2019</item>
+        <item>MADT2020</item>
+        <item>MADT2021</item>
+    </array>
 </resources>
