@@ -15,6 +15,7 @@ import java.util.Date;
 public class MainActivity2 extends AppCompatActivity
 {
     Button studentlistbutton;
+    Button attendanceButton;
 
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -26,6 +27,7 @@ public class MainActivity2 extends AppCompatActivity
         textView.setText(currentDateandTime);
 
         studentlistbutton = (Button)findViewById(R.id.studentlistbutton);
+        attendanceButton = (Button) findViewById(R.id.attendanceButton);
 
 
 //        Bundle b = getIntent().getExtras();
@@ -47,11 +49,19 @@ public class MainActivity2 extends AppCompatActivity
             {
                 Toast.makeText(getApplicationContext(),"TESTING",Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(getApplicationContext(), AttendanceOptions.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), AttendanceOptions.class);
+//                startActivity(intent);
             };
         });
 
+        attendanceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"TEST",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), AttendanceOptions.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
