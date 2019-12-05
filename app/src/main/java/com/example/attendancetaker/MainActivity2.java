@@ -16,17 +16,16 @@ import java.util.Date;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity2 extends AppCompatActivity
-{
-//    Button studentlistbutton;
+public class MainActivity2 extends AppCompatActivity {
+    Button studentlistbutton;
     Button attendanceButton;
-    Spinner ShowClass;
-    EditText editTextName;
+    //    Spinner ShowClass;
+//    EditText editTextName;
     Button ViewButton;
 
 
     //database connection
-    DatabaseReference databaseStudents;
+//    DatabaseReference databaseStudents;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,37 +35,58 @@ public class MainActivity2 extends AppCompatActivity
         String currentDateandTime = sdf.format(new Date());
         textView.setText(currentDateandTime);
 
-        databaseStudents = FirebaseDatabase.getInstance().getReference("student");
-        ViewButton = (Button) findViewById(R.id.studentlistbutton);
-        ShowClass = (Spinner) findViewById(R.id.spinner1);
-        editTextName = (EditText) findViewById(R.id.editText);
+//        databaseStudents = FirebaseDatabase.getInstance().getReference("student");
+//        ViewButton = (Button) findViewById(R.id.studentlistbutton);
+//        ShowClass = (Spinner) findViewById(R.id.spinner1);
+//        editTextName = (EditText) findViewById(R.id.editText);
 
-//        studentlistbutton = (Button)findViewById(R.id.studentlistbutton);
+        studentlistbutton = (Button) findViewById(R.id.studentlistbutton);
         attendanceButton = (Button) findViewById(R.id.attendanceButton);
 
-        ViewButton.setOnClickListener(new View.OnClickListener() {
+        studentlistbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addName();
+                Intent intent = new Intent(getApplicationContext(), Screen2.class);
+                startActivity(intent);
             }
         });
+
+//        ViewButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                addName();
+//            }
+//        });
+
+//    private void addName() {
+//        String text = editTextName.getText().toString().trim();
+//        String className = ShowClass.getSelectedItem().toString();
+//
+//        if (!TextUtils.isEmpty(text)) {
+//
+//            String  id = databaseStudents.push().getKey();
+//
+//            Students student = new Students(id,text,className);
+//            databaseStudents.child(id).setValue(student);
+//            Toast.makeText(this, "Student Added", Toast.LENGTH_LONG).show();
+//
+//        } else
+//            {
+//            Toast.makeText(this, "you should enter a class", Toast.LENGTH_LONG).show();
+//        }
+//
+        attendanceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "TEST", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), AttendanceOptions.class);
+                startActivity(intent);
+            }
+        });
+//
+//    }
     }
-    private void addName() {
-        String text = editTextName.getText().toString().trim();
-        String className = ShowClass.getSelectedItem().toString();
-
-        if (!TextUtils.isEmpty(text)) {
-
-            String  id = databaseStudents.push().getKey();
-
-            Students student = new Students(id,text,className);
-            databaseStudents.child(id).setValue(student);
-            Toast.makeText(this, "Student Added", Toast.LENGTH_LONG).show();
-
-        } else {
-            Toast.makeText(this, "you should enter a class", Toast.LENGTH_LONG).show();
-        }
-    }
+}
 
 //        Bundle b = getIntent().getExtras();
 //        TextView nameValue = (TextView) findViewById(R.id.name1);
@@ -89,7 +109,7 @@ public class MainActivity2 extends AppCompatActivity
 
 //                Intent intent = new Intent(getApplicationContext(), AttendanceOptions.class);
 //                startActivity(intent);
-            };
+//            };
 //        });
 //
 //        attendanceButton.setOnClickListener(new View.OnClickListener() {

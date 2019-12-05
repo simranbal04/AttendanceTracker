@@ -43,14 +43,16 @@ public class MainActivity extends AppCompatActivity
                 {
                     Toast.makeText(getApplicationContext(),"Professor Simran",Toast.LENGTH_SHORT).show();
 
-                    Intent intent  = new Intent(getApplicationContext(), MainActivity2.class);
+//                    Intent intent  = new Intent(getApplicationContext(), MainActivity2.class);
+                    Intent intent1 = new Intent(getApplicationContext(),MainActivity2.class);
+                    startActivity(intent1);
                     // create a bundle object
 
-                    Bundle b = new Bundle();
+//                    Bundle b = new Bundle();
                     // insert values
-                    b.putString("Name", edusername.getText().toString());
-                    intent.putExtras(b);
-                    startActivity(intent);
+//                    b.putString("Name", edusername.getText().toString());
+//                    intent.putExtras(b);
+//                    startActivity(intent);
 
                 }
 

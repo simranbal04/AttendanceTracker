@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "246188246957",
+    "firebase_url": "https://attendance-taker-d2b7d.firebaseio.com",
+    "project_id": "attendance-taker-d2b7d",
+    "storage_bucket": "attendance-taker-d2b7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246188246957:android:85de530f7113c8e0d18324",
+        "android_client_info": {
+          "package_name": "com.example.attendancetaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246188246957-ovs6prap7nmqqhhjvkj35fjpfsqqlh7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.attendancetaker",
+            "certificate_hash": "636b077a4e056c070d7156f037df8c5cdf8fd014"
+          }
+        },
+        {
+          "client_id": "246188246957-6gtqq477j0to3v3796dd5v4lp8ppfl0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtnhvJsEtHiykTvaI-TxAnwdYbtK4JcIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246188246957-6gtqq477j0to3v3796dd5v4lp8ppfl0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -19,6 +19,9 @@ import com.google.zxing.WriterException;
 import androidmads.library.qrgenearator.QRGContents;
 import androidmads.library.qrgenearator.QRGEncoder;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class AttendanceBarcode extends AppCompatActivity {
     String TAG="GenearatorQRCode";
     EditText edittext;
@@ -29,7 +32,7 @@ public class AttendanceBarcode extends AppCompatActivity {
 
     String inputvalue;
 
-
+    DatabaseReference databaseStudents;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,6 +42,9 @@ public class AttendanceBarcode extends AppCompatActivity {
         qrcode = (ImageView) findViewById(R.id.qrcode);
         createbutton = (Button) findViewById(R.id.createbutton);
 //        bitmap = (Bitmap) findViewById(R.id.bit)
+
+
+        databaseStudents = FirebaseDatabase.getInstance().getReference("student");
 
         createbutton.setOnClickListener(new View.OnClickListener() {
             @Override
