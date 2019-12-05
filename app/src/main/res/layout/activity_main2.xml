@@ -82,12 +82,24 @@
 
     <Button
         android:id="@+id/studentlistbutton"
-        android:layout_width="match_parent"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="430dp"
         android:background="#9656a1"
-        android:text="Add Student List"
+        android:text="Add Student"
         android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/viewstudentbutton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:background="#9656a1"
+        android:text="View Student"
+        android:textSize="20dp"
+        android:layout_marginLeft="220dp"
+        />
+
 
     <Button
         android:id="@+id/attendanceButton"
